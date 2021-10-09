@@ -1,6 +1,4 @@
 django
 whitenoise
 gunicorn
-mecab-ipadic
-libmecab-dev
-mecab-ipadic-utf8
+mecab-python
