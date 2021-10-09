@@ -2,3 +2,4 @@ django
 whitenoise
 gunicorn
 mecab-python
+unidic-lite
