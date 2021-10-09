@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+{% block main %}
+<div class="row">
+    <div class="col-sm">
+        <p>品詞の数を調べたいテキストを入力してください。</p>
+        <form method="post">
+            {% csrf_token %}
+            {% for field in form %}
+            <p>
+                {{ field }}
+            </p>
+            {% endfor %}
+            <input type="submit" value="変換" class="btn btn-info" />
+        </form>  
+    </div>
+    <div class="col-sm">
+        <h2>結果</h2>
+        <p>{{ result }}</p>
+    </div>
+</div>
+{% endblock %}
