@@ -17,7 +17,8 @@ class Index(FormView):
         matome=[]
         for element in elements:
             parts = element.split(',')
-            surface, pos = parts[0].split('\t')
+            aaa = parts[0].split('\t')
+            pos = aaa[4]
             
             matome.append(pos)
         result = str(Counter(matome))[9:-2]
